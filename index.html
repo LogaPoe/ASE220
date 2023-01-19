@@ -6,6 +6,13 @@
 			li {
 				display: inline;
 				text-align: center;
+				font-size: 22px;
+				color: white;
+				text-decoration: none;
+			}
+			a {
+				text-decoration: none;
+				color: white
 			}
 			header {
 				background-color: blue;
@@ -18,8 +25,9 @@
 				text-align: center;
 			}
 			#navigation {
-				list-style: none;
-				margin: auto;
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
 			}
 		</style>
 	</head>
@@ -28,14 +36,37 @@
 			<h1 id="title">My New Webpage</h1>
 			<nav>
 				<ul id="navigation">
-					<li>About Me</li>
-					<li>Skills</li>
-					<li>Hobbies</li>
-					<li>Contact</li>
+					<li><a href="#home">Home</a>&emsp;</li>
+					<li><a href="#about-me">About Me</a>&emsp;</li>
+					<li><a href="#skills">Skills</a>&emsp;</li>
+					<li><a href="#hobbies">Hobbies</a>&emsp;</li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
+				<br>
 			</nav>
 		</header>
-		<div>
+		<div id="home">
+			<h1>My New Webpage</h1>
+			<span>An inline tag</span>
+		</div>
+		<div id="about-me">
+			<h1>My New Webpage</h1>
+			<span>An inline tag</span>
+		</div>
+		<div id="skills">
+			<h1>My New Webpage</h1>
+			<span>An inline tag</span>
+		</div>
+		<div id="hobbies">
+			<h1>My New Webpage</h1>
+			<span>An inline tag</span>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		</div>
+		<div id="contact">
 			<h1>My New Webpage</h1>
 			<span>An inline tag</span>
 		</div>
