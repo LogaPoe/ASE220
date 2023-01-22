@@ -8,7 +8,7 @@
 		<style>
 			.container {
 			}
-			li {
+			navs {
 				display: inline;
 				text-align: center;
 				font-size: 22px;
@@ -30,6 +30,14 @@
 				margin: 0;
 				padding: 0;
 			}
+			hr {
+				background-color: black;
+				height: 5px;
+				border: none;
+			}
+			@media (max-width: 600px) {
+				
+			}
 		</style>
 	</head>
 	<body>
@@ -38,40 +46,64 @@
 				<h1 id="title">My New Webpage</h1>
 				<nav>
 					<ul id="navigation" class="row justify-content-center">
-						<li class="col-lg-2 col-sm-4"><a href="#home">Home</a>&emsp;</li>
-						<li class="col-lg-2 col-sm-4"><a href="#about-me">About Me</a>&emsp;</li>
-						<li class="col-lg-2 col-sm-4"><a href="#skills">Skills</a>&emsp;</li>
-						<li class="col-lg-2 col-sm-4"><a href="#hobbies">Hobbies</a>&emsp;</li>
-						<li class="col-lg-2 col-sm-4"><a href="#contact">Contact</a></li>
+						<li class="navs col-lg-2 col-sm-4"><a href="#home">Home</a>&emsp;</li>
+						<li class="navs col-lg-2 col-sm-4"><a href="#about-me">About Me</a>&emsp;</li>
+						<li class="navs col-lg-2 col-sm-4"><a href="#skills">Skills</a>&emsp;</li>
+						<li class="navs col-lg-2 col-sm-4"><a href="#hobbies">Hobbies</a>&emsp;</li>
+						<li class="navs col-lg-2 col-sm-4"><a href="#contact">Contact</a></li>
 					</ul>
 					<br>
 				</nav>
 			</header>
 			<div id="home" class="row">
-				<span>Hi I'm Logan, I am a student at NKU majoring in Software Engineering looking for a future in programming</span>
+				<span class="col-lg-6 col-md-6 col sm-6">Hi I'm Logan, I am a student at NKU majoring in Software Engineering looking for a future in programming</span>
 			</div>
+			<hr/>
 			<div id="about-me">
-				<h1>My New Webpage</h1>
-				<span>An inline tag</span>
+				<h2>About Me</h2>
+				<span>Logan Poe was born in 2003 in Northern Kentucky. There, he went to local schools which led him to Dixie Height High School. 
+				I participated in Marching band as well as archery. I achieved a Magna Cum Laude Diploma and then started my first full time job at R.A. Jones.
+				There, I learned basic job etiquette and grew connections with employees as well as my employers.<br></span>
+				<span>In 2021, I started my first year at Northern Kentucky University. I started as a Computer Science major and started learning basic programming skills.
+				I changed major to Applied Software Engineering and am currently learning more about programming. I hope to have a future career in full stack development.</span>
 			</div>
+			<hr/>
 			<div id="skills">
-				<h1>My New Webpage</h1>
-				<span>An inline tag</span>
+				<h2>Skills</h2>
+				<ul>
+					<li>Basic knowledge in Programming languages such as Java, Python, and JavaScript</li>
+					<li>Basic knowledge in Html and CSS</li>
+					<li>Knowledge in Windows OS and Linux OS</li>
+					<li>Knowledge in Excel, Powerpoint, and word</li>
+				</ul>
 			</div>
+			<hr/>
 			<div id="hobbies">
-				<h1>My New Webpage</h1>
-				<span>An inline tag</span>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
+				<h2>Hobbies</h2>
+				<ul>
+					<li>Watching different media such as movies, T.V. shows, and Youtube</li>
+					<li>Video Games</li>
+					<li>Listening to rock bands as well as alternative</li>
+				</ul>
 			</div>
-			<div id="contact">
-				<h1>My New Webpage</h1>
-				<span>An inline tag</span>
+			<hr/>
+			<div id="contact" class="row">
+				<h2>Contact Form</h2>
+				<form action="https://webdevbasics.net/scripts/demo.php" method="post" name="addForm" id="addForm">
+					<div>
+						Name:  <input class="col-lg-4 col-md-4 col-sm-4" type="text" name="CustName" id="CustName" >
+						Email: <input class="col-lg-4 col-md-4 col-sm-4" type="text" name="CustEmail" id="CustEmail" >
+						<br>
+					</div>
+					<h4>Any comments you have for me:</h4>
+					<textarea name='othercomments'id='othercomments'cols='40' rows='2'>
+					</textarea><br>
+					<input type="submit">
+					<input type="reset">
+				</form>
 			</div>
 		</div>
+		<footer>Logan Poe &#169;</footer>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 	</body>
 </html>
