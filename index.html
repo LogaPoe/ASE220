@@ -9,6 +9,7 @@
 		<style>
 			.container {
 				font-family: "Trirong", serif;
+				background-color: blue;
 			}
 			navs {
 				display: inline;
@@ -38,14 +39,24 @@
 				border: none;
 			}
 			@media (max-width: 600px) {
-				body {
+				.container {
 					background-color: red;
+				}
+			}
+			@media (min-width: 600px) and (max-width: 900px) {
+				#home {
+					background-color: green;
+				}
+			}
+			@media (min-width: 900px) {
+				footer {
+					background-color: black;
 				}
 			}
 		</style>
 	</head>
 	<body>
-		<div class="container bg-primary text-white">
+		<div class="container text-white">
 			<header class="row bg-dark">
 				<h1 id="title">Logan Poe's Webpage</h1>
 				<nav>
@@ -114,7 +125,7 @@
 					<span>Logan Poe &#169;</span>
 				</div>
 				<div class="col-lg-6 col-md-6 col sm-6">
-					<span>Contact Me: <a class="text-dark"href="loganpoe430@gmail.com">loganpoe430@gmail.com</a></span>
+					<span>Contact Me: <a class="text-white"href="loganpoe430@gmail.com">loganpoe430@gmail.com</a></span>
 				</div>
 			</footer>
 		</div>
