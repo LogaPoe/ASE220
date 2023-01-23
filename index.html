@@ -37,15 +37,9 @@
 				height: 5px;
 				border: none;
 			}
-			.bg-primary {       
-				@include media-breakpoint-up(sm) { 
-				    background:#fff;
-			    }
-			    @include media-breakpoint-up(md) { 
-				    background:#f6f6f6;
-			    }
-			    @include media-breakpoint-up(lg) { 
-				    background:#fafafa;
+			@media (max-width: 600px) {
+				body {
+					background-color: red;
 				}
 			}
 		</style>
