@@ -6,19 +6,63 @@
 		<title>My New Webpage</title>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+		<link rel="stylesheet" href="scss/free/_variables.scss">
 		<style>
-			.container {
+			.container-fluid {
 				font-family: "Trirong", serif;
-				background-color: blue;
+				background-color: #0047AB;
 			}
 			navs {
 				display: inline;
 				text-align: center;
-				font-size: 22px;
+				font-size: 22em;
 				text-decoration: none;
+			}
+			#loganImage {
+				border-radius: 25px;
+				float: right;
+			}
+			.home {
+				border: solid;
+				border-color: #332D2D;
+				margin: 1em;
+				padding: 1em;
+				background-color: #383838;
+			}
+			#about-me {
+				border: solid;
+				border-color: #332D2D;
+				margin: 1em;
+				padding: 1em;
+				background-color: #383838;
+			}
+			#skills {
+				border: solid;
+				border-color: #332D2D;
+				margin: 1em;
+				padding: 1em;
+				background-color: #383838;
+			}
+			#hobbies {
+				border: solid;
+				border-color: #332D2D;
+				margin: 1em;
+				padding: 1em;
+				background-color: #383838;
+			}
+			#contact {
+				border: solid;
+				border-color: #332D2D;
+				margin: 1em;
+				padding: 1em;
+				background-color: #383838;
+			}
+			.lists {
+				list-style: none;
 			}
 			a {
 				text-decoration: none;
+				color: #0047AB;
 			}
 			header {
 			}
@@ -29,34 +73,32 @@
 				text-align: center;
 			}
 			#navigation {
-				list-style-type: none;
+				list-style: none;
 				margin: 0;
 				padding: 0;
 			}
-			hr {
-				background-color: black;
-				height: 5px;
-				border: none;
-			}
 			@media (max-width: 600px) {
-				.container {
-					background-color: red;
+				.container-fluid {
+					background-color: #0096FF;
+				}
+				a {
+					color: #0096FF;
 				}
 			}
 			@media (min-width: 600px) and (max-width: 900px) {
-				#home {
-					background-color: green;
+				.home {
+					background-color: #36454F;
 				}
 			}
 			@media (min-width: 900px) {
 				footer {
-					background-color: black;
+					background-color: #36454F;
 				}
 			}
 		</style>
 	</head>
 	<body>
-		<div class="container text-white">
+		<div class="container-fluid text-white text-center">
 			<header class="row bg-dark">
 				<h1 id="title">Logan Poe's Webpage</h1>
 				<nav>
@@ -70,42 +112,39 @@
 					<br>
 				</nav>
 			</header>
-			<div id="home" class="row">
-				<span class="col-lg-6 col-md-6 col sm-6">Hi I'm Logan, I am a student at NKU majoring in Software Engineering looking for a future in programming</span>
-				<div class="col-lg-6 col-md-6 col sm-6 justify-content-center">
-					<img id="loganImage" src="img/logan_image.jpg" alt="logan image" width="150" height="150">
+			<div class="row home align-items-center justify-content-end">
+				<span class="col-lg-5 col-md-5 col sm-5">Hi I'm Logan, I am a student at NKU majoring in Software Engineering looking for a future in programming</span>
+				<div class="col-lg-5 col-md-5 col sm-5">
+					<img id="loganImage" src="img/logan_image.jpg" alt="logan image" width="200" height="200">
 				</div>
 			</div>
-			<hr/>
-			<div id="about-me">
+			<div id="about-me" class="row align-items-center justify-content-end">
 				<h2>About Me</h2>
-				<span>I was born in 2003 in Northern Kentucky. There, I went to local schools which led him to Dixie Height High School. 
+				<span class="col-lg-6 col-md-6 col sm-12">I was born in 2003 in Northern Kentucky. There, I went to local schools which led me to Dixie Height High School. 
 				I participated in Marching band as well as archery. I achieved a Magna Cum Laude Diploma and then started my first full time job at R.A. Jones.
 				There, I learned basic job etiquette and grew connections with employees as well as my employers.<br></span>
-				<span>In 2021, I started my first year at Northern Kentucky University. I started as a Computer Science major and started learning basic programming skills.
+				<span class="col-lg-6 col-md-6 col sm-12">In 2021, I started my first year at Northern Kentucky University. I started as a Computer Science major and started learning basic programming skills.
 				I changed major to Applied Software Engineering and am currently learning more about programming. I hope to have a future career in full stack development.</span>
 			</div>
-			<hr/>
-			<div id="skills">
+			<div id="skills" class="row align-items-center justify-content-end">
 				<h2>Skills</h2>
 				<ul>
-					<li>Basic knowledge in Programming languages such as Java, Python, and JavaScript</li>
-					<li>Basic knowledge in Html and CSS</li>
-					<li>Knowledge in Windows OS and Linux OS</li>
-					<li>Knowledge in Excel, Powerpoint, and word</li>
+					<li class="lists">Basic knowledge in Programming languages such as Java, Python, and JavaScript</li>
+					<li class="lists">Basic knowledge in Html and CSS</li>
+					<li class="lists">Knowledge in Windows OS and Linux OS</li>
+					<li class="lists">Knowledge in Excel, Powerpoint, and word</li>
 				</ul>
 			</div>
 			<hr/>
-			<div id="hobbies">
+			<div id="hobbies" class="row align-items-center justify-content-end">
 				<h2>Hobbies</h2>
 				<ul>
-					<li>Watching different media such as movies, T.V. shows, and Youtube</li>
-					<li>Video Games</li>
-					<li>Listening to rock bands as well as alternative</li>
+					<li class="lists">Watching different media such as movies, T.V. shows, and Youtube</li>
+					<li class="lists">Video Games</li>
+					<li class="lists">Listening to rock bands as well as alternative</li>
 				</ul>
 			</div>
-			<hr/>
-			<div id="contact" class="row">
+			<div id="contact" class="row align-items-center justify-content-end"">
 				<h2>Contact Form</h2>
 				<form action="https://webdevbasics.net/scripts/demo.php" method="post" name="addForm" id="addForm">
 					<div>
@@ -114,14 +153,14 @@
 						<br>
 					</div>
 					<h4>Any comments you have for me:</h4>
-					<textarea name='othercomments'id='othercomments'cols='40' rows='2'>
+					<textarea name='othercomments'id='othercomments'cols='20' rows='2'>
 					</textarea><br>
 					<input type="submit">
 					<input type="reset">
 				</form>
 			</div>
-			<footer>
-				<div class="col-lg-6 col-md-6 col sm-6 float-right">
+			<footer class="row">
+				<div class="col-lg-6 col-md-6 col sm-6">
 					<span>Logan Poe &#169;</span>
 				</div>
 				<div class="col-lg-6 col-md-6 col sm-6">
